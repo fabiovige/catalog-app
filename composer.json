@@ -1,0 +1,16 @@
+{
+    "name": "fabiovige/catalog",
+    "description": "Catalog",
+    "authors": [
+        {
+            "name": "Fabio Vige",
+            "email": "fabiovige@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\": "src/Core/"
+        }
+    },
+    "require": {}
+}
