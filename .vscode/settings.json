@@ -11,6 +11,7 @@
     "files.autoSave": "afterDelay",
     "php.executablePath": "/usr/bin/php",
     "php.suggest.basic": false,
-    "intelephense.environment.phpVersion": "8.3.6"
+    "intelephense.environment.phpVersion": "8.3.6",
+    "explorer.compactFolders": false
   }
   
