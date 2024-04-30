@@ -8,9 +8,9 @@ trait MethodsMagics
 {
     public function __get($name)
     {
-        if($this->{$name}){
+        if(isset($this->{$name}))
             return $this->{$name};
-        }
+        
         $className = get_class($this);
         throw new Exception("Property {$name} not found in {$className}");
     }
