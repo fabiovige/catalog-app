@@ -6,12 +6,13 @@ use Exception;
 
 trait MethodsMagics
 {
-    public function __get($name)
+    public function __get($property)
     {
-        if(isset($this->{$name}))
-            return $this->{$name};
+        if (property_exists($this, $property)) {
+            return $this->{$property};
+        }
         
         $className = get_class($this);
-        throw new Exception("Property {$name} not found in {$className}");
+        throw new Exception("Property {$property} not found in {$className}");
     }
 }
